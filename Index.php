@@ -41,7 +41,7 @@ if (isset($_GET["code"])) {
                 $id_mahasiswa   = preg_replace('/@students.uii.ac.id/', '', $data['email']);
             }else{
 
-                echo 'Not UII student!'
+                echo 'Not UII student!';
             }
         }
     }
