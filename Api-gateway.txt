@@ -1,0 +1,55 @@
+410 S1 Hukum Reguler
+415 S1 International Program
+411 S1 Hukum Bisnis
+921 S2 MH
+912 S2 MKn
+932 S3 Doktor
+
+----------------------------------------------
+
+(POST) ENDPOINT TOKEN ACCESS
+URL : https://xapi.uii.ac.id/v1/token/
+
+BODY :
+client_id : request
+client_secret : request
+
+----------------------------------------------
+
+(GET) DATA KHS MAHASISWA
+URL : https://xapi.uii.ac.id/v1/grade/khs
+
+PARAMS :
+nim : 21912025
+
+HEADERS :
+Authorization : token
+
+----------------------------------------------
+
+(GET) DATA KRS MAHASISWA
+URL : https://xapi.uii.ac.id/v1/ras/schedule-by-students
+
+PARAMS :
+kd_jurusan : 912
+tahun_akademik : 2022/2023
+kd_semester : 1
+nim : 21912025
+
+HEADERS :
+Authorization : token
+
+----------------------------------------------
+
+(GET) CEK STATUS KRS MATAKULIAH
+URL : https://xapi.uii.ac.id/v1/ras/keyin-check
+
+PARAMS :
+kd_jurusan : 912
+tahun_akademik : 2022/2023
+kd_semester : 1
+nim : 21912025
+kd_matakuliah : MHK301
+
+HEADERS :
+Authorization : token
